@@ -13,3 +13,5 @@ source venv/bin/activate
 sh setup.sh
 
 The setup script will download latest docker mysql image and load sample database into it. You can then run prompts against the data loaded in pandas frame from the mysql db.
+
+You can change the sample database or re-direct it to your own database and run prompts against it.
