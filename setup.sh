@@ -20,7 +20,7 @@ docker cp $SAMPLE_DATA_SQL $CONTAINER_NAME:/tmp/$SAMPLE_DATA_SQL
 sleep 5
 
 echo "Load sample data into MySQL container"
-docker exec -i mysql-container sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD -e 'source /tmp/mysqlsampledatabase.sql'" 
+docker exec -i $CONTAINER_NAME sh -c "mysql -u root -p$MYSQL_ROOT_PASSWORD -e 'source /tmp/mysqlsampledatabase.sql'" 
 sleep 5
 
 pip3 install -r requirements.txt
