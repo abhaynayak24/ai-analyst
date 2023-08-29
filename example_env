@@ -1,6 +1,6 @@
 OPENAI_API_TOKEN="your OPENAI_API_KEY"
 HOST="your_host - localhost"
-USER="mysql_user"
+USERNAME="mysql_user"
 PASSWORD="mysql_pwd"
 DB="mysql_db"
 PORT="mysql_port"
