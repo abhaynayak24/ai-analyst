@@ -10,7 +10,7 @@ CONTAINER_NAME="mysql-container"
 SAMPLE_DATA_SQL="mysqlsampledatabase.sql"
 
 docker pull mysql:latest
-docker run -d --name $CONTAINER_NAME -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD mysql:latest
+docker run -d --name $CONTAINER_NAME -p 3307:3306 -e MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD mysql:latest
 
 echo "Waiting for MySQL container to start..."
 sleep 20
