@@ -30,5 +30,5 @@ pandas_ai = PandasAI(
     )
 
 response = pandas_ai.run(df, prompt="which customer has made the highest payment")
-print(response)
+print(response) # The customer with the highest payment is 141.
 
